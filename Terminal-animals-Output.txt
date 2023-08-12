@@ -1,0 +1,222 @@
+Last login: Sat Aug 12 19:42:52 on ttys000
+kumait@Kumait ~ % git clone https://github.com/29Kumait/animals.git cd anima 
+fatal: Too many arguments.
+
+usage: git clone [<options>] [--] <repo> [<dir>]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    --reject-shallow      don't clone shallow repository
+    -n, --no-checkout     don't create a checkout
+    --bare                create a bare repository
+    --mirror              create a mirror repository (implies bare)
+    -l, --local           to clone from a local repository
+    --no-hardlinks        don't use local hardlinks, always copy
+    -s, --shared          setup as shared repository
+    --recurse-submodules[=<pathspec>]
+                          initialize submodules in the clone
+    --recursive ...       alias of --recurse-submodules
+    -j, --jobs <n>        number of submodules cloned in parallel
+    --template <template-directory>
+                          directory from which templates will be used
+    --reference <repo>    reference repository
+    --reference-if-able <repo>
+                          reference repository
+    --dissociate          use --reference only while cloning
+    -o, --origin <name>   use <name> instead of 'origin' to track upstream
+    -b, --branch <branch>
+                          checkout <branch> instead of the remote's HEAD
+    -u, --upload-pack <path>
+                          path to git-upload-pack on the remote
+    --depth <depth>       create a shallow clone of that depth
+    --shallow-since <time>
+                          create a shallow clone since a specific time
+    --shallow-exclude <revision>
+                          deepen history of shallow clone, excluding rev
+    --single-branch       clone only one branch, HEAD or --branch
+    --no-tags             don't clone any tags, and make later fetches not to follow them
+    --shallow-submodules  any cloned submodules will be shallow
+    --separate-git-dir <gitdir>
+                          separate git dir from working tree
+    -c, --config <key=value>
+                          set config inside the new repository
+    --server-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+    --filter <args>       object filtering
+    --also-filter-submodules
+                          apply partial clone filters to submodules
+    --remote-submodules   any cloned submodules will use their remote-tracking branch
+    --sparse              initialize sparse-checkout file to include only files at root
+    --bundle-uri <uri>    a URI for downloading bundles before fetching from origin remote
+
+kumait@Kumait ~ % https://github.com/29Kumait/animals.git cd animals
+zsh: no such file or directory: https://github.com/29Kumait/animals.git
+kumait@Kumait ~ % git clone https://github.com/29Kumait/animals.git cd anima
+fatal: Too many arguments.
+
+usage: git clone [<options>] [--] <repo> [<dir>]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --progress            force progress reporting
+    --reject-shallow      don't clone shallow repository
+    -n, --no-checkout     don't create a checkout
+    --bare                create a bare repository
+    --mirror              create a mirror repository (implies bare)
+    -l, --local           to clone from a local repository
+    --no-hardlinks        don't use local hardlinks, always copy
+    -s, --shared          setup as shared repository
+    --recurse-submodules[=<pathspec>]
+                          initialize submodules in the clone
+    --recursive ...       alias of --recurse-submodules
+    -j, --jobs <n>        number of submodules cloned in parallel
+    --template <template-directory>
+                          directory from which templates will be used
+    --reference <repo>    reference repository
+    --reference-if-able <repo>
+                          reference repository
+    --dissociate          use --reference only while cloning
+    -o, --origin <name>   use <name> instead of 'origin' to track upstream
+    -b, --branch <branch>
+                          checkout <branch> instead of the remote's HEAD
+    -u, --upload-pack <path>
+                          path to git-upload-pack on the remote
+    --depth <depth>       create a shallow clone of that depth
+    --shallow-since <time>
+                          create a shallow clone since a specific time
+    --shallow-exclude <revision>
+                          deepen history of shallow clone, excluding rev
+    --single-branch       clone only one branch, HEAD or --branch
+    --no-tags             don't clone any tags, and make later fetches not to follow them
+    --shallow-submodules  any cloned submodules will be shallow
+    --separate-git-dir <gitdir>
+                          separate git dir from working tree
+    -c, --config <key=value>
+                          set config inside the new repository
+    --server-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+    --filter <args>       object filtering
+    --also-filter-submodules
+                          apply partial clone filters to submodules
+    --remote-submodules   any cloned submodules will use their remote-tracking branch
+    --sparse              initialize sparse-checkout file to include only files at root
+    --bundle-uri <uri>    a URI for downloading bundles before fetching from origin remote
+
+kumait@Kumait ~ % ls
+Applications	Documents	Library		Movies		Pictures	animals		index.html
+Desktop		Downloads	Markdown.rtfd	Music		Public		animals-1	my_project
+kumait@Kumait ~ % cd animals
+kumait@Kumait animals % touch Cat.md Dog.md Sheep.md
+kumait@Kumait animals % nano Cat.md
+kumait@Kumait animals % mv Cat.md Sheep.md
+kumait@Kumait animals %  touch Cat.md
+kumait@Kumait animals % nano Cat.md       
+kumait@Kumait animals % Dog.md
+zsh: command not found: Dog.md
+kumait@Kumait animals % nano Dog.md
+kumait@Kumait animals % touch readme.md
+kumait@Kumait animals % nano readme.md
+kumait@Kumait animals % cd animals
+cd: no such file or directory: animals
+kumait@Kumait animals % ls
+Cat.md		Dog.md		Sheep.md	SheepS.png	iki.png		iki2.png	iki3.png	readme.md	sheep.png
+kumait@Kumait animals % git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+kumait@Kumait animals % git add .
+kumait@Kumait animals % git commit -m "new files animals"
+[main (root-commit) ed3d67a] new files animals
+ 9 files changed, 113 insertions(+)
+ create mode 100644 Cat.md
+ create mode 100644 Dog.md
+ create mode 100644 Sheep.md
+ create mode 100644 SheepS.png
+ create mode 100644 iki.png
+ create mode 100644 iki2.png
+ create mode 100644 iki3.png
+ create mode 100644 readme.md
+ create mode 100644 sheep.png
+kumait@Kumait animals % git push
+Enumerating objects: 11, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 8.56 MiB | 7.57 MiB/s, done.
+Total 11 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/29Kumait/animals.git
+ * [new branch]      main -> main
+kumait@Kumait animals % git checkout -b new-feature
+Switched to a new branch 'new-feature'
+kumait@Kumait animals % ls
+Cat.md		Dog.md		Sheep.md	SheepS.png	iki.png		iki2.png	iki3.png	readme.md	sheep.png
+kumait@Kumait animals % touch Unicorn.md
+kumait@Kumait animals % nano Unicorn.md                            
+kumait@Kumait animals % nano readme.md
+kumait@Kumait animals % git add .
+kumait@Kumait animals % git commit -m "adding the fourth file"
+[new-feature 259bada] adding the fourth file
+ 3 files changed, 41 insertions(+)
+ create mode 100644 Unicorn.
+ create mode 100644 Unicorn.md
+kumait@Kumait animals % git push
+fatal: The current branch new-feature has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin new-feature
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+kumait@Kumait animals %  git push --set-upstream origin new-feature
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (5/5), 633 bytes | 633.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'new-feature' on GitHub by visiting:
+remote:      https://github.com/29Kumait/animals/pull/new/new-feature
+remote: 
+To https://github.com/29Kumait/animals.git
+ * [new branch]      new-feature -> new-feature
+branch 'new-feature' set up to track 'origin/new-feature'.
+kumait@Kumait animals % git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+kumait@Kumait animals % git pull origin/main
+fatal: 'origin/main' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+kumait@Kumait animals % git pull origin main
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), 631 bytes | 631.00 KiB/s, done.
+From https://github.com/29Kumait/animals
+ * branch            main       -> FETCH_HEAD
+   ed3d67a..08113f0  main       -> origin/main
+Updating ed3d67a..08113f0
+Fast-forward
+ Unicorn.   | 38 ++++++++++++++++++++++++++++++++++++++
+ Unicorn.md |  0
+ readme.md  |  3 +++
+ 3 files changed, 41 insertions(+)
+ create mode 100644 Unicorn.
+ create mode 100644 Unicorn.md
+kumait@Kumait animals % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+kumait@Kumait animals % 
