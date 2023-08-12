@@ -8,5 +8,5 @@ Last visit to Lea;  video me & Blue in Zandaam more than a year ago  [Blue](Dog.
 
 Media and lines are picked from the web in whole [Sheep](Sheep.md)
 
-Unicorn rashly made copy/past days ago practice on color .md [Unicorn](Unicorn.md]
+Unicorn rashly made copy/past days ago practice on color Markdown [Unicorn](Unicorn.md)
  
