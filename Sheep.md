@@ -25,5 +25,5 @@ _______
 _______
 
 Sheep possess a unique ability to recognize faces, both human and ovine. Their social intelligence enhances their interactions and strengthens their bonds.
-![Sheep](sheeps.png)
+![Sheep](SheepS.png)
 
